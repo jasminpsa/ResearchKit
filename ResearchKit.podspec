@@ -11,5 +11,12 @@ Pod::Spec.new do |s|
   s.source_files = 'ResearchKit/**/*.{h,m,swift}'
   s.resources    = 'ResearchKit/**/*.{fsh,vsh}', 'ResearchKit/Animations/**/*.m4v', 'ResearchKit/Artwork.xcassets', 'ResearchKit/Localized/*.lproj'
   s.platform     = :ios, '8.2'
-  s.requires_arc = true
+  s.requires_arc = true,
+  s.dependency 'Web2RKCommon', :path => '/Users/dinesh.vaghasia/Desktop/appbakery_ios/Web2RKCommon/Web2RKCommon.spec'
+
+  #s.subspec 'Web2RKCommon' do |web2rkcommon|
+  #  web2rkcommon.source_files   = 'Web2RKCommon/**/*.{h,m,swift}'
+  #  web2rkcommon.dependency 'Web2RKCommon'
+  #end
+
 end
